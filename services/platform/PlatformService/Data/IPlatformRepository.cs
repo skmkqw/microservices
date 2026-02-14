@@ -2,7 +2,7 @@ using PlatformService.Models;
 
 namespace PlatformService.Data;
 
-interface IPlatformRepository
+public interface IPlatformRepository
 {
 	bool SaveChanges();
 

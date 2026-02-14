@@ -1,3 +1,3 @@
 namespace PlatformService.DTOs;
 
-record PlatformCreateDto(string Name, string Publisher);
+public record PlatformCreateDto(string Name, string Publisher);
