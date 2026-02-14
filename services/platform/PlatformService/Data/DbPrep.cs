@@ -23,6 +23,9 @@ static class DbPrep
                 new Platform() { Name = "SQL Server Express", Publisher = "Microsoft" },
                 new Platform() { Name = "Kubernetes", Publisher = "Cloud Native Computer Foundation" }
             ]);
+
+            dbContext.SaveChanges();
+
             Console.WriteLine("--> Completed seeding platform data");
         }
         else
