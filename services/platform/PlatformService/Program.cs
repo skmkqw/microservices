@@ -9,5 +9,7 @@ builder.Services.AddScoped<IPlatformRepository, PlatformRepository>();
 
 var app = builder.Build();
 
+DbPrep.PrepPopulation(app);
+
 app.UseHttpsRedirection();
 app.Run();
