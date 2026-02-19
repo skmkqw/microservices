@@ -21,7 +21,7 @@ public class HttpCommandDataClient : ICommandDataClient
         var payload = new StringContent(JsonSerializer.Serialize(platform), Encoding.UTF8, "application/json");
 
         var response =
-            await _httpClient.PostAsync($"{_configuration["CommandService"]}/api/platforms", payload);
+            await _httpClient.PostAsync($"{_configuration["CommandService"]}/api/cs/platforms", payload);
         if (response.IsSuccessStatusCode)
         {
             Console.WriteLine("--> Sync POST to Command Service OK");
