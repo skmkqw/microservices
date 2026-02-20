@@ -1,11 +1,11 @@
 using CommandService.Models;
 
 namespace CommandService.Data;
-public class CommandRepo : ICommandRepo
+public class CommandRepository : ICommandRepository
 {
     private readonly AppDbContext _context;
 
-    public CommandRepo(AppDbContext context)
+    public CommandRepository(AppDbContext context)
     {
         _context = context;
     }
